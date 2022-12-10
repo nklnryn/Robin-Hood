@@ -16,28 +16,14 @@ Steps of execution of the project:
 
 Screen Shots of the website:
 
-1. Login Page
+1. Home Page
 
-<img src="./hack_images/Screenshot 2022-11-16 at 9.55.53 PM.png" width="500" align="middle">
+<img src="./images/Homepage.png" width="500" align="middle">
 
-2. Login Page with credential
+2. Transaction
 
-<img src="./hack_images/Screenshot 2022-11-16 at 9.58.42 PM.png" width="500" align="middle">
+<img src="./images/trans.png" width="500" align="middle">
 
-3. Transaction being executed  
+3. Donation  
 
-<img src="./hack_images/Screenshot 2022-11-16 at 9.56.29 PM.png" width="500" align="middle">
-
-4. Page updated with donations
-
-<img src="./hack_images/Screenshot 2022-11-16 at 9.56.58 PM.png" width="500" align="middle">
-
-5. Loan requests being executed
-
-<img src="./hack_images/Screenshot 2022-11-16 at 9.57.11 PM.png" width="500" align="middle">
-
-6. Terms and conditions pop up
-
-<img src="./hack_images/Screenshot 2022-11-16 at 9.56.10 PM.png" width="500" align="middle">
-
-
+<img src="./images/donation.png" width="500" align="middle">
