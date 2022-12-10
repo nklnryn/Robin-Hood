@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Robin Hood</title>
+  </head>
+  <body>
+    <!-- TOP NAVIGATION -->
+    <nav>
+      <p class="welcome">Log in to get started</p>
+      <img src="logo.png" alt="Logo" class="logo" />
+      <form class="login">
+        <input
+          type="text"
+          placeholder="ID"
+          class="login__input login__input--user"
+        />
+        <!-- In practice, use type="password" -->
+        <input
+          type="text"
+          placeholder="PIN"
+          maxlength="4"
+          class="login__input login__input--pin"
+        />
+        <button class="login__btn">&rarr;</button>
+      </form>
+    </nav>
+
+    <main class="app">
+      <!-- BALANCE -->
+      <div class="balance">
+        <div>
+          <p class="balance__label">Current balance</p>
+          <!-- <p class="balance__date">
+            As of <span class="date">16/11/2022</span>
+          </p> -->
+        </div>
+        <p class="balance__value">₹0000</p>
+      </div>
+
+      <!-- MOVEMENTS -->
+      <div class="movements">
+        <div class="movements__row">
+          <div class="movements__type movements__type--deposit">2 deposit</div>
+          <div class="movements__date">3 days ago</div>
+          <div class="movements__value">₹4 000</div>
+        </div>
+        <div class="movements__row">
+          <div class="movements__type movements__type--withdrawal">
+            1 withdrawal
+          </div>
+          <div class="movements__date">16/11/2022</div>
+          <div class="movements__value">-₹378</div>
+        </div>
+      </div>
+
+      <!-- SUMMARY -->
+      <div class="summary">
+        <p class="summary__label">In</p>
+        <p class="summary__value summary__value--in">₹0000</p>
+        <p class="summary__label">Out</p>
+        <p class="summary__value summary__value--out">₹0000</p>
+        <p class="summary__label">Donations</p>
+        <p class="summary__value summary__value--interest">₹0000</p>
+        <button class="btn--sort">&downarrow; SORT</button>
+      </div>
+
+      <!-- OPERATION: TRANSFERS -->
+      <div class="operation operation--transfer">
+        <h2>Transfer money</h2>
+        <form class="form form--transfer">
+          <input type="text" class="form__input form__input--to" />
+          <input type="number" class="form__input form__input--amount" />
+          <button class="form__btn form__btn--transfer">&rarr;</button>
+          <label class="form__label">Transfer to</label>
+          <label class="form__label">Amount</label>
+        </form>
+      </div>
+
+      <!-- OPERATION: LOAN -->
+      <div class="operation operation--loan">
+        <h2>Request loan</h2>
+        <form class="form form--loan">
+          <input type="number" class="form__input form__input--loan-amount" />
+          <button class="form__btn form__btn--loan">&rarr;</button>
+          <label class="form__label form__label--loan">Amount</label>
+        </form>
+      </div>
+
+      <!-- OPERATION: CLOSE -->
+      <!-- <div class="operation operation--close">
+        <h2>Close account</h2>
+        <form class="form form--close">
+          <input type="text" class="form__input form__input--user" />
+          <input
+            type="password"
+            maxlength="6"
+            class="form__input form__input--pin"
+          />
+          <button class="form__btn form__btn--close">&rarr;</button>
+          <label class="form__label">Confirm user</label>
+          <label class="form__label">Confirm PIN</label>
+        </form>
+      </div> -->
+
+      <!-- LOGOUT TIMER -->
+      <!-- <p class="logout-timer">
+        You will be logged out in <span class="timer">05:00</span>
+      </p> -->
+    </main>
+
+    <!-- <footer>
+      &copy; by Jonas Schmedtmann. Don't claim as your own :)
+    </footer> -->
+
+    <button class="btn--extra">ℹ Terms & Conditions</button>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>The Terms & Conditions are:</h1>
+      <p>
+        1. Every transaction made by the user is tracked and respective balances
+        are calculated.
+      </p>
+      <p>
+        2. The user can transfer any amount to other users, as long as it is
+        feasible.
+      </p>
+      <p>
+        3. A reasonable amount can be requested as a Loan Amount. Would be
+        transferred to the respective user's account without much delay.
+      </p>
+      <p>
+        4. A small part of every transaction is taken as donation to charity
+        (Rounding the amount to the nearest 10 number).
+      </p>
+      <p>5. The donation is a very small amount ranging from Rs. 1-10.</p>
+      <p>
+        6. This enables round-figure amount of money to be deducted from your
+        bank account which makes tracking money spent easier.
+      </p>
+      <p>
+        7. This small contribution over millions of transactions can aid many
+        charities in need of money.
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
